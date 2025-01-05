@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Heart Disease Prediction</h1>
+        <p>Fill in the details below to predict your risk of heart disease.</p>
+    </header>
+    <form id="prediction-form">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="cholesterol">Cholesterol Level (mg/dL)</label>
+        <input type="number" id="cholesterol" name="cholesterol" required>
+
+        <label for="bloodPressure">Blood Pressure (mm Hg)</label>
+        <input type="number" id="bloodPressure" name="bloodPressure" required>
+
+        <label for="smoking">Do you smoke?</label>
+        <select id="smoking" name="smoking" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <button type="submit">Get Prediction</button>
+    </form>
+
+    <div id="result" style="display:none;">
+        <h3 id="risk-level"></h3>
+        <p id="advice"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
